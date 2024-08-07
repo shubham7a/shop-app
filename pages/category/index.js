@@ -20,9 +20,9 @@ export default function page() {
           Product categories:
         </h2>
         <div className='mt-6 grid grid-cols-1 gap-x-4 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
-          {data.map((cat) => (
+          {data.map((cat, index) => (
             <h3
-              key={cat}
+              key={index}
               className='mt-4 text-gray-800 flex justify-center border-2 border-red-950 w-[100%]'
             >
               {cat}
